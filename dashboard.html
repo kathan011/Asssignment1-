@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white p-5 hidden md:block">
+            <h2 class="text-2xl font-bold mb-5">Dashboard</h2>
+            <ul>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Analytics</a></li>
+                <li class="mb-4"><a href="#" class="hover:text-gray-400">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Top Navbar -->
+            <header class="bg-white shadow p-4 flex justify-between items-center">
+                <h1 class="text-xl font-semibold">Dashboard</h1>
+                <button class="md:hidden text-gray-800">☰</button>
+            </header>
+
+            <!-- Content Area -->
+            <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-5 shadow rounded-lg">
+                    <h3 class="text-lg font-semibold">Total Users</h3>
+                    <p class="text-2xl mt-2">1,245</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-5 shadow rounded-lg">
+                    <h3 class="text-lg font-semibold">Revenue</h3>
+                    <p class="text-2xl mt-2">$8,423</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-5 shadow rounded-lg">
+                    <h3 class="text-lg font-semibold">Orders</h3>
+                    <p class="text-2xl mt-2">532</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
